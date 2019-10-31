@@ -39,7 +39,7 @@ public class MovingCircleApp extends GraphicsApp {
         xPosition = xPosition + 1; // Alternativ: xPosition++
         yPosition = yPosition + 1; // Alternativ: yPosition++
         /**
-         * Während Radius und Farbe mit "festen" Werten initalisiert werden, werden für
+         * Während Radius und Farbe mit "festen" Werten initialisiert werden, werden für
          * die Position die Werte aus den, auf Klassenebene erstellten, Variablen verwendet.
          * Achtung: Variablen auf Methodenebene funktionieren hier nicht, da diese bei jedem
          * Start der Methode neu erstellt werden und ihren Wert nach dem Methodendurchlauf
