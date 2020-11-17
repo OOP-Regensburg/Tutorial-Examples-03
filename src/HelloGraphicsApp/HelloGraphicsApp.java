@@ -7,6 +7,7 @@ import de.ur.mi.oop.colors.Colors;
 import de.ur.mi.oop.graphics.Circle;
 import de.ur.mi.oop.graphics.Line;
 import de.ur.mi.oop.graphics.Rectangle;
+import de.ur.mi.oop.launcher.GraphicsAppLauncher;
 
 
 /**
@@ -85,5 +86,9 @@ public class HelloGraphicsApp extends GraphicsApp {
         // Erstellen & Zeichnen der Linie von der rechten, oberen Ecke zur linken, unteren Ecke
         Line rightLine = new Line(150,0,0,150,Colors.RED);
         rightLine.draw();
+    }
+
+    public static void main(String[] args) {
+        GraphicsAppLauncher.launch();
     }
 }

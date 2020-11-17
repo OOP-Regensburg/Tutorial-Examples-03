@@ -3,6 +3,7 @@ package MovingCircle;
 import de.ur.mi.oop.app.GraphicsApp;
 import de.ur.mi.oop.colors.Colors;
 import de.ur.mi.oop.graphics.Circle;
+import de.ur.mi.oop.launcher.GraphicsAppLauncher;
 
 /**
  * In dieser GraphicsApp-Anwendung wird ein roter Kreis aus der linken, oberen Ecke
@@ -47,5 +48,9 @@ public class MovingCircleApp extends GraphicsApp {
          */
         Circle myCircle = new Circle(xPosition, yPosition, 100, Colors.RED);
         myCircle.draw();
+    }
+
+    public static void main(String[] args) {
+        GraphicsAppLauncher.launch();
     }
 }
