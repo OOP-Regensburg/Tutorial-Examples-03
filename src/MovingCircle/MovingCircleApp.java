@@ -25,14 +25,14 @@ public class MovingCircleApp extends GraphicsApp {
      */
     @Override
     public void initialize() {
-        setCanvasSize(500,500);
+        setCanvasSize(500, 500);
     }
 
     /**
      * In der - während das Programm läuft - alle 16ms aufgerufenen Methode draw wird:
-     *  - der Hintergrund der Zeichenfläche weiß eingefärbt
-     *  - die Werte in den Positionsvariablen um 1 Pixel erhöht
-     *  - ein neuer Kreis auf Basis der aktuellen Positionswerte erzeugt und gezeichnet
+     * - der Hintergrund der Zeichenfläche weiß eingefärbt
+     * - die Werte in den Positionsvariablen um 1 Pixel erhöht
+     * - ein neuer Kreis auf Basis der aktuellen Positionswerte erzeugt und gezeichnet
      */
     @Override
     public void draw() {

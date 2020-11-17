@@ -23,15 +23,15 @@ public class HelloGraphicsApp extends GraphicsApp {
      */
     @Override
     public void initialize() {
-        setCanvasSize(150,150);
+        setCanvasSize(150, 150);
     }
 
     /**
      * In der - während das Programm läuft - alle 16ms aufgerufenen Methode draw wird:
-     *  - der Hintergrund in der Methode fillBackgroundWithColor eingefärbt
-     *  - ein Rechteck gezeichnet (drawRectangle)
-     *  - ein Kreis gezeichnet (drawCircle)
-     *  - zwei Linien über die gezeichneten Elemente gezogen (drawCross)
+     * - der Hintergrund in der Methode fillBackgroundWithColor eingefärbt
+     * - ein Rechteck gezeichnet (drawRectangle)
+     * - ein Kreis gezeichnet (drawCircle)
+     * - zwei Linien über die gezeichneten Elemente gezogen (drawCross)
      */
     @Override
     public void draw() {
@@ -51,7 +51,7 @@ public class HelloGraphicsApp extends GraphicsApp {
          * Die Farbe wird mit den Werten 156 (rot) , 0 (grün) und 75 (blau) im
          * RGB-Farbraum [https://de.wikipedia.org/wiki/RGB-Farbraum] erzeugt.
          */
-        myColor = new Color(156,0,75);
+        myColor = new Color(156, 0, 75);
         drawBackground(myColor);
     }
 
@@ -61,7 +61,7 @@ public class HelloGraphicsApp extends GraphicsApp {
      */
     public void drawRectangle() {
         Rectangle myRectangle;
-        myRectangle = new Rectangle(50,50,100,100,Colors.WHITE);
+        myRectangle = new Rectangle(50, 50, 100, 100, Colors.WHITE);
         myRectangle.draw();
     }
 
@@ -71,7 +71,7 @@ public class HelloGraphicsApp extends GraphicsApp {
      */
     public void drawCircle() {
         Circle myCircle;
-        myCircle = new Circle(50,50,50,Colors.BLACK);
+        myCircle = new Circle(50, 50, 50, Colors.BLACK);
         myCircle.draw();
     }
 
@@ -81,10 +81,10 @@ public class HelloGraphicsApp extends GraphicsApp {
      */
     public void drawCross() {
         // Erstellen & Zeichnen der Linie von der linken, oberen Ecke zur rechten, unteren Ecke
-        Line leftLine = new Line(0,0,150,150,Colors.RED);
+        Line leftLine = new Line(0, 0, 150, 150, Colors.RED);
         leftLine.draw();
         // Erstellen & Zeichnen der Linie von der rechten, oberen Ecke zur linken, unteren Ecke
-        Line rightLine = new Line(150,0,0,150,Colors.RED);
+        Line rightLine = new Line(150, 0, 0, 150, Colors.RED);
         rightLine.draw();
     }
 
